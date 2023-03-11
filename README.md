@@ -12,9 +12,9 @@ ggplot2
 sf
 sp
 Data
-The data used for this visualization is obtained from the Geoportal Berlin/Brandenburg (https://www.geodatenportal.de/geodatenportal/de/home.html). The shapefile used contains population density data for the year 2019.
+The data used for this visualization is obtained from the kontur database Berlin/Brandenburg (https://data.humdata.org/dataset/kontur-population-dataset). The shapefile used contains population density data for the year 2022.
 
-Code
+## Code
 The R code used to create the visualization is available in the main.R file.
 
 The script does the following:
@@ -40,5 +40,5 @@ The output files will be saved in the iamges folder.
 
 # Graphics
 
-https://github.com/LikithDcunha/Rayshader/blob/development/images/titled_ber-brand.jpeg
-https://github.com/LikithDcunha/Rayshader/blob/development/images/titled_brand.jpeg
+![Berlin-Brandenberg] (https://github.com/LikithDcunha/Rayshader/blob/development/images/titled_ber-brand.png)
+![Brandenberg] (https://github.com/LikithDcunha/Rayshader/blob/development/images/titled_brand.png)
