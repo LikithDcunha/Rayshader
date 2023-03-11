@@ -40,5 +40,5 @@ The output files will be saved in the iamges folder.
 
 # Graphics
 
-![Berlin-Brandenberg] (https://github.com/LikithDcunha/Rayshader/blob/development/images/titled_ber-brand.png)
-![Brandenberg] (https://github.com/LikithDcunha/Rayshader/blob/development/images/titled_brand.png)
+![Berlin-Brandenberg](https://github.com/LikithDcunha/Rayshader/blob/development/images/titled_ber-brand.png)
+![Brandenberg](https://github.com/LikithDcunha/Rayshader/blob/development/images/titled_brand.png)
