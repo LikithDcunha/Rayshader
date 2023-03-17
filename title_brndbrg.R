@@ -9,9 +9,9 @@ library(stringr)
 library(ggplot2)
 library(extrafont)
 
-loadfonts(device = "all", quiet = TRUE) ## load the fonts from your system
 
-read_ber_brand <- image_read('images/final_ber_brand.png')
+
+read_brand <- image_read('images/final_brand.png')
 
 colors <- met.brewer("Tam")
 swatchplot(colors)
@@ -19,17 +19,17 @@ text_color <- darken(colors[5],.25)
 swatchplot(text_color)
 
 
-annote_berlin <- glue("Population estimates are bucketed into 400 meter (about 1/4 mile) ",
+annote_brndbrg <- glue("Population estimates are bucketed into 400 meter (about 1/4 mile) ",
                       "hexagons.") |> 
-  str_wrap(40)
+                  str_wrap(40)
 
 footer <- glue("By Likith DCunha | ",
                "Data: Kontur Population (Released 2022-06-30) | ",'inspired by: Spencer Schien ')
 
-read_ber_brand |>
+read_brand |>
   image_crop(gravity = 'center',
              geometry = '5000x4500') |>
-  image_annotate("Berlin-Brandenberg, Germany",
+  image_annotate("Brandenberg, Germany",
                  gravity = "northwest",
                  location = "+650+500",
                  color = text_color,
@@ -43,7 +43,7 @@ read_ber_brand |>
                  size = 120,
                  weight = 700,
                  font =  "DIN 1451 Mittelschrift")|>
-  image_annotate(annote_berlin,
+  image_annotate(annote_brndbrg,
                  gravity = "west",
                  location = "+600+1300",
                  color = text_color,
@@ -55,4 +55,4 @@ read_ber_brand |>
                  font = "DIN 1451 Mittelschrift",
                  color = alpha(text_color, .5),
                  size = 80) |>
-  image_write("images/titled_ber-brand.png")
+  image_write("images/titled_brand.png")
