@@ -51,7 +51,7 @@ plot_brandenberg
 brandenberg <- st_transform(brandenberg, crs= st_crs(data))
 
 
-# intersect the geospatial data with florida to limit kontur data to only desired boundary
+# intersect the geospatial data with Brandenberg to limit kontur data to only desired boundary
 
 st_brandenberg <- st_intersection(data, brandenberg)
 
