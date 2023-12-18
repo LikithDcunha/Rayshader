@@ -50,7 +50,7 @@ plot_berlin_brand
 
 
 
-# plot brandenberg
+# plot brandenberg for only brandenburg  map without berlin
 # plot_brandenberg <- brandenberg |> 
 #   ggplot()+geom_sf() +  
 #   geom_sf(data = brandenberg$geometry)
@@ -66,7 +66,7 @@ berlin <- st_transform(berlin,crs = st_crs(data))
 
 
 
-# intersect the geospatial data with florida to limit kontur data to only desired boundary
+# union the geospatial data of brandenberg with berlin to get kontur data to only desired boundary
 final_map <- st_union(berlin, brandenberg)
 
 st_map_ber_brand_data <- st_intersection(data, st_final_map)
